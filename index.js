@@ -1,3 +1,7 @@
+//template_t8bgidn
+//service_t7ef14s
+//RltjN5WO8SLrgNLbt
+
 let isModalOpen = false;
 let contrastToggle = false;
 const scaleFactor = 1 / 20;
@@ -10,6 +14,7 @@ function moveBackground(event) {
   for (let i = 0; i < shapes.length; ++i) {
     const isOdd = i % 2 !== 0;
     const boolInt = isOdd ? -1 : 1;
+    // Added rotate after tutorial
     shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px) rotate(${x * boolInt * 10}deg)`
   }
 }
@@ -31,10 +36,10 @@ function contact(event) {
   loading.classList += " modal__overlay--visible";
   emailjs
     .sendForm(
-      "service_80ih0if",
-      "template_d9refyl",
+      "service_t7ef14s",
+      "template_t8bgidn",
       event.target,
-      "user_K1PoFs8pB2YVWStDxrUls"
+      "user_RltjN5WO8SLrgNLbt"
     )
     .then(() => {
       loading.classList.remove("modal__overlay--visible");
@@ -43,7 +48,7 @@ function contact(event) {
     .catch(() => {
       loading.classList.remove("modal__overlay--visible");
       alert(
-        "The email service is temporarily unavailable. Please contact me directly on email@email.com"
+        "The email service is temporarily unavailable. Please contact me directly on ejuloma07@gmail.com"
       );
     });
 }
