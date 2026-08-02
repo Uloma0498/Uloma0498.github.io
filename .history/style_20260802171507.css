@@ -30,7 +30,7 @@ button {
 }
 
 section {
-  background-color: rgb(237, 226, 226);
+  background-color: rgb(202, 193, 193);
   transition: all 300ms ease;
 }
 
@@ -99,7 +99,7 @@ input:focus, textarea:focus {
 }
 
 .orange {
-  color: #cd4125 !important;
+  color: #f06449 !important;
 }
 
 .link__hover-effect {
